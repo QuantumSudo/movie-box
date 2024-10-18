@@ -1,6 +1,6 @@
 // Github profile is QuantumSudo
 // Titles: https://omdbapi.com/?s=thor&page=1&apikey=e8d66c2b
-// details: http://www.omdbapi.com/?i=tt3896198&apikey=e8d66c2b
+// details: https://www.omdbapi.com/?i=tt3896198&apikey=e8d66c2b
 
 const movieSearchBox = document.getElementById('movie-search-box');
 const searchList = document.getElementById('search-list');
@@ -85,4 +85,3 @@ function displayMovieDetails(details){
     </div>
     `;
 }
-
