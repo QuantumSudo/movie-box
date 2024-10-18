@@ -67,9 +67,8 @@ img{
 .search-element .form-control{
     padding: 1rem 2rem;
     font-size: 1.4rem;
-    border: none;
+    border: 2px solid var(--yellow-color);
     border-radius: 25px;
-    outline: none;
     color: var(--light-dark-color);
     width: 350px;
 }
