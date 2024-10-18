@@ -17,7 +17,7 @@ async function loadMovies(searchTerm) {
 function findMovies(){
     let searchTerm = (movieSearchBox.value).trim();
     if(searchTerm.length > 0){
-        searchList.classList.remove('hde-search-list');
+        searchList.classList.remove('hide-search-list');
         loadMovies(searchTerm);
     } else {
         searchList.classList.add('hide-search-list');
@@ -55,7 +55,7 @@ function loadMovieDetails(){
            // console.log(movie.dataset.id);
            searchList.classList.add('hide-search-list');
            movieSearchBox.value = "";
-           const result = await fetch(`http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=e8d66c2b`);
+           const result = await fetch(`https://omdbapi.com/?s=${searchTerm}&page=1&apikey=e8d66c2b`);
            const movieDetails = await result.json();
           // console.log(movieDetails);
           displayMovieDetails(movieDetails);
