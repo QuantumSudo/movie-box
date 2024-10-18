@@ -1,17 +1,10 @@
-const express = require('express');
-const path = require('path');
-const app = express();
-const PORT = process.env.PORT || 3000;
+const jsonServer = require("json-server");
+const server = jsonServer.create();
+const router = jsonServer.router("db.json");
+const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 8080; 
 
-// Serve static files from the public directory
-app.use(express.static(path.join(__dirname, 'public')));
+server.use(middlewares);
+server.use(router);
 
-// Route to serve the main HTML file
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
-});
+server.listen(port);
