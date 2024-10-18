@@ -1,28 +1,18 @@
 {
-    "name": "your-project-name",
+    "name": "movie-box",
     "version": "1.0.0",
-    "description": "A brief description of your project",
     "main": "index.js",
     "scripts": {
-      "start": "node index.js", 
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
     },
     "keywords": [],
-    "author": "Your Name",
+    "author": "",
     "license": "ISC",
+    "description": "",
     "dependencies": {
-    
-    },
-    "devDependencies": {
-    
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/QuantumSudo/movie-box.git"
-    },
-    "bugs": {
-      "url": "https://github.com/QuantumSudo/your-repo/issues" 
-    },
-    "homepage": "https://github.com/QuantumSudo/movie-box#readme" 
+      "cors": "^2.8.5",
+      "json-serve": "^0.1.0",
+      "json-server": "^0.17.1"
+    }
   }
-  
